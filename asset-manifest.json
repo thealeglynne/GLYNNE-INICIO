@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GLYNNE-INICIO/static/css/main.9f23152e.css",
+    "main.js": "/GLYNNE-INICIO/static/js/main.6917c230.js",
+    "static/js/787.c1112931.chunk.js": "/GLYNNE-INICIO/static/js/787.c1112931.chunk.js",
+    "static/media/lv_0_20230720233434.mp4": "/GLYNNE-INICIO/static/media/lv_0_20230720233434.972ec55f9c52848d8c51.mp4",
+    "static/media/lv_0_20230721004541.mp4": "/GLYNNE-INICIO/static/media/lv_0_20230721004541.c5ec28f156680e1dc292.mp4",
+    "static/media/1_51e53fb5-d936-44c7-82bf-b6fa5f7e77af.png": "/GLYNNE-INICIO/static/media/1_51e53fb5-d936-44c7-82bf-b6fa5f7e77af.5e083f26008a2b093ba3.png",
+    "static/media/1_5379f2a5-8388-4a12-8163-45248ac73a9d.png": "/GLYNNE-INICIO/static/media/1_5379f2a5-8388-4a12-8163-45248ac73a9d.96738ba1232fc6b87ac7.png",
+    "static/media/letrero-bano-luz-neon-noche (2).jpg": "/GLYNNE-INICIO/static/media/letrero-bano-luz-neon-noche (2).f287e3d7ba41c4b93964.jpg",
+    "static/media/fondo-galaxia-espacial (2).jpg": "/GLYNNE-INICIO/static/media/fondo-galaxia-espacial (2).3b07c1747affaa78983f.jpg",
+    "static/media/Alien Robot.otf": "/GLYNNE-INICIO/static/media/Alien Robot.42dac8ab28433abc9276.otf",
+    "index.html": "/GLYNNE-INICIO/index.html",
+    "main.9f23152e.css.map": "/GLYNNE-INICIO/static/css/main.9f23152e.css.map",
+    "main.6917c230.js.map": "/GLYNNE-INICIO/static/js/main.6917c230.js.map",
+    "787.c1112931.chunk.js.map": "/GLYNNE-INICIO/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f23152e.css",
+    "static/js/main.6917c230.js"
+  ]
+}
