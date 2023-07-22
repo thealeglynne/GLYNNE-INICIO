@@ -1,38 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+ 
+}
+@font-face {
+  font-family: 'AlienRobot';
+  src: url('../src/alien_robot/Alien Robot.otf') format('truetype');
+  /* Otros formatos de fuente si los tienes disponibles */
+}
 .App {
+  scroll-snap-type: x mandatory;
+  font-family: 'AlienRobot', sans-serif;
+}
+.section1 {
+  scroll-snap-align: start;
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(./img/video/letrero-bano-luz-neon-noche\ \(2\).jpg);
+  background-size: cover;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  top: -10px;
+  background-color: transparent;
+  
+}
+nav ul {
+  text-align: start;
+  list-style-type: none;
+  margin: 0px;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: transparent;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  transition: 1s;
+  background-color: transparent;
+}
+nav ul li a:hover {
+  transition: 1s;
+  color: rgb(100, 100, 100);
+}
+.content {
+  position: relative;
+  z-index: 10;
+  margin-top: 100px;
+  color: aliceblue;
+  width: 70%;
+  height: 100vh;
+top: -10%;
+z-index: 5;
+left: 15%;
+background-color: transparent;
+}
+.video-container {
+  position: relative;
+  max-width: 100%;
+  max-height: 100vh;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 (para videos en formato widescreen) */
+  overflow: hidden;
+}
+.responsive-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+
+  background-size: cover;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+  scroll-snap-align: start;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 30vh;
+  font-size: 12px;
+  background-image: url(./img/video/fondo-galaxia-espacial\ \(2\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 17%; /* Ajuste de posición */
+  border-top: 1px solid #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SobrecardFOOTER {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 30vh;
+  z-index: 300;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 30px;
   color: white;
+  backdrop-filter: blur(40px);
+  left: 0%;
+  background-color: transparent;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.cardFOOTER {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  background: transparent;
+  height: 30vh;
+  z-index: 30;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(40px);
+  transition: 1s;
+  left: 0%;
+}
+.footerIcon{
+  background-color: transparent;
+  top: 3%;
+}
+#icons{
+  font-size: 14px;
+  
+}
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: transparent;
+  font-size: 12px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.footerLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  background-color: transparent;
+ 
+}
+@media screen and (max-width: 450px) and (max-height: 750px) {
+  .footerLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    background-color: transparent;
   }
 }
+
+.footerLinks a .footerIcon {
+  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.footerLinks a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.62);
+  background-color: transparent;
+}
+
+/* Estilos responsivos */
+@media screen and (min-width:1250px) and (min-height:680px){
+  .content{
+    top:-10%;
+    width: 80%;
+    left: 10%;
+  } 
+  
+}
+@media (max-width: 1299px){
+  .content{
+    top:-18%;
+    width: 75%;
+    left: 15%;
+  }
+  
+}
+@media screen and (min-width:1150px) and (min-height:680px){
+  .content{
+    top:-10%;
+    width: 80%;
+    left: 10%;
+  } 
+ 
+}
+@media (max-width: 1150px){
+  .content{
+    top:-15%;
+    left: 10%;
+    width: 85%;
+  }
+ 
+}
+@media (max-width: 950px){
+  .content{
+    top:-12%;
+    width: 100%;
+    left: 0%;
+  }
+
+ 
+ 
+}
+@media (max-width: 900px) {
+  .section1{
+    background-size: cover;
+  }
+  .content {
+    position: absolute;
+    top: -10;
+    left:0;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  .video-container {
+    padding-bottom: 0; /* Eliminamos el padding para mantener el video a su tamaño original */
+    height: 100%; /* Ocupar toda la altura de content */
+    background-color: transparent;
+  }
+  .responsive-video {
+    max-width: 100%; /* Ocupar toda la anchura de content */
+    max-height: 100%; /* Ocupar toda la altura de content */
+  background-color: transparent;
+  }
+  nav ul {
+    text-align: start;
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    font-size: 10px;
+    position: relative;
+    z-index: 10;
+    left: -1%;
+    top: -10px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .content {
+    position: absolute;
+    top: -12%;
+    left:0%;
+    max-width:100%;
+    max-height: 100%;
+    z-index: 1;
+    background-color: transparent;
+  }
+ 
+  nav ul {
+    text-align: start;
+    list-style-type: none;
+    margin: 0px;
+    padding: 17px;
+    font-size: 15px;
+    position: relative;
+    z-index: 10;
+    left: 30%;
+    filter: blur(3%);
+    top: 5px;
+  }
+}
+@media screen and (max-width: 500px) and (max-height:760px) {
+  .content {
+    position: absolute;
+    top: -8%;
+    left:0%;
+    max-width:100%;
+    max-height: 100%;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  nav ul {
+    text-align: start;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+    font-size: 15px;
+    position: relative;
+    z-index: 10;
+    filter: blur(3%);
+   top: -2%;
+  }
+}
+@media screen and (max-width:400px) {
+  nav ul {
+    text-align: start;
+    list-style-type: none;
+    margin: 0px;
+    padding: 17px;
+    font-size: 13px;
+    position: relative;
+    z-index: 10;
+    filter: blur(3%);
+    
+  }
+}
+
